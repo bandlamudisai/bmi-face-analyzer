@@ -34,29 +34,8 @@ python evaluate.py --csv "BMI data - Sheet1.csv" --photos height_weight_test --m
 This prints predicted vs actual height/weight/BMI for each test photo, plus
 overall R² and MSE for each target.
 
-## Upload to GitHub
 
-1. Create a new empty repository on github.com (no README/license, since you already have them).
-2. From the folder containing all the files above:
 
-```
-git init
-git add .
-git commit -m "Face BMI estimator"
-git branch -M main
-git remote add origin https://github.com/<your-username>/<your-repo>.git
-git push -u origin main
-```
-
-You'll be prompted for GitHub credentials — use a personal access token as the
-password (GitHub → Settings → Developer settings → Personal access tokens).
-
-## Deploy on Streamlit Community Cloud
-
-1. Go to https://share.streamlit.io and sign in with GitHub.
-2. Click "New app", select your repo and branch, set main file to `app.py`.
-3. Deploy. First build takes 10–20 minutes because `dlib` compiles from source
-   using the packages listed in `packages.txt`.
 
 ## How it works
 
